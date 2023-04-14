@@ -1,0 +1,77 @@
+main{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    position: relative;
+    width: 30%;
+    /* margin-top: 7rem; */
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.drinkInfo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Drink-Image{
+    position: relative;
+    width: 25%;
+    height: 25%;
+    background-color: white;
+    border: 0.15rem solid white;
+    border-radius: 1.5rem;
+    box-shadow: 0rem 0rem 1rem 0.1rem rgba(0,0,0,0.25);
+}
+
+#Glass{
+    margin-top: 2rem;
+}
+
+#Instructions{
+    margin-top: 2rem;
+}
+
+#Ingredients{
+    margin-top: 2rem;
+}
+
+.recContainer{
+    display:flex;
+    justify-content: center;
+}
+    
+#Drink-Rec{
+    position: relative;
+    width: 55%;
+    background-color: white;
+    border: 0.15rem solid white;
+    border-radius: 1.5rem;
+    box-shadow: 0rem 0rem 1rem 0.1rem rgba(0,0,0,0.25);
+    padding: 10px;
+}
+
+.Button-Group button{
+    padding: 1rem 3rem;   
+    cursor: pointer;
+    
+}
+
+#logo {
+    width: 25%;
+    height: 25%;
+}
+
+h4 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}

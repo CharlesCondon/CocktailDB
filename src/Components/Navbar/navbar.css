@@ -1,0 +1,77 @@
+:root {
+    --pad: max(20px, 4vmin);
+}
+
+#headContainer {
+    position: relative;
+}
+
+header {
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px double rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#eye {
+    position: sticky;
+    top:0;
+    width: 40px;
+    height: 40px;
+    margin: calc(var(--pad)/2) var(--pad);
+}
+
+#linkContainer {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.navLinks {
+    text-decoration: none;
+    margin: calc(var(--pad)/2) var(--pad);
+    font-size: 24px;
+    color: black;
+}
+a {
+    position: relative;
+    cursor: pointer;
+    margin:0;
+    padding: 0;
+}
+  
+a:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 55%;
+    margin-top: 0px;
+    background: #f2aa4cff;
+}
+  
+a:before {
+    left: 0px;
+}
+  
+a:after {
+    right: 5px;
+    background: rgb(0, 0, 0);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+a:hover:before {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
