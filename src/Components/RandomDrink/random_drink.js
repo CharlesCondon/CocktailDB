@@ -44,31 +44,34 @@ function Random_Drink() {
   
   return (
     <main>
-        <div className = "drinkInfo">
+      <div id='randContainer'>
+        <div className="drinkInfo">
             <img id = "Drink-Image" src={drinkInfo[0]?.strDrinkThumb} alt=""/>
             <h2 id = "Drink-Name">{drinkInfo[0]?.strDrink}</h2>
         </div>
 
         <div className="recContainer">
-            <p id = "Drink-Rec">
-                <h4 id = "Glass">Glass Recommended:</h4>{drinkInfo[0]?.strGlass}
+            <div id = "Drink-Rec">
                 <h4 id = "Instructions">Description/Instructions:</h4>{drinkInfo[0]?.strInstructions}
+                <h4 id = "Glass">Recommended Glass:</h4>{drinkInfo[0]?.strGlass}
                 <h4 id = "Ingredients">Ingredients:</h4> 
                 <div>
                 <ul>
                     {
-                        drinkInfo[0]?.ingredientsMeasure.map((item) => {
+                        drinkInfo[0]?.ingredientsMeasure.map((item, index) => {
                             return(
-                                <li>{item}</li>
+                              <div key={index*10}>
+                                <li key={index}>{item}</li>
+                                <hr/>
+                              </div>
                             )
                         })
                     }
                 </ul>
                 </div>
-                  
-                
-            </p>
+            </div>
         </div>
+      </div>
     </main>
   )
 }

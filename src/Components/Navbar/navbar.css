@@ -3,7 +3,9 @@
 }
 
 #headContainer {
-    position: relative;
+    position:sticky;
+    top: 0;
+    z-index: 50;
 }
 
 header {
@@ -22,7 +24,7 @@ header {
     top:0;
     width: 40px;
     height: 40px;
-    margin: calc(var(--pad)/2) var(--pad);
+    margin: 0 var(--pad);
 }
 
 #linkContainer {

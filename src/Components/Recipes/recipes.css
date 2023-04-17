@@ -1,0 +1,24 @@
+#ingContainer {
+    margin: 2rem;
+    height: 60vh;
+    border: 7px double rgba(0,0,0,1);
+    border-radius: 12px;
+    background-color: rgba(255,255,255,.15);
+    overflow: scroll;
+    padding: 10px;
+}
+
+#submitIng {
+    margin: auto;
+}
+
+.ing {
+    display: inline-block;
+    border-radius: 24px;
+    padding: 5px 25px;
+    margin: 10px;
+    background-color: rgba(242, 170, 76, .75);
+}
+.ing:hover {
+    background-color: rgba(242, 170, 76, .25);
+}

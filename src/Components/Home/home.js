@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './home.css';
 
 function home() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <main id='homeContainer'>
+      <h1 id='welcome'>Welcome to the Cocktail Catalogue!</h1>
+    </main>
   )
 }
 

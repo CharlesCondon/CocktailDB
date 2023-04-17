@@ -1,0 +1,14 @@
+main{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#homeContainer {
+    margin: 2rem;
+}
+
+#welcome {
+    margin: 0;
+    text-align: center;
+}

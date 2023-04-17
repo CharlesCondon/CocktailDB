@@ -1,0 +1,44 @@
+main{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#searchContainer {
+    width: 700px;
+    margin: 2rem auto;
+}
+
+form {
+    margin: auto;
+    display: flex;
+}
+
+button {
+    padding: 0;
+}
+
+#suggestion {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.Cocktail_Item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .5);
+    border: 5px double black;
+    border-radius: 2px;
+    margin: 2rem auto;
+    align-items: center;
+}
+
+#searchImg{
+    position: relative;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
